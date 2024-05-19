@@ -46,8 +46,8 @@ func startSendingNotifications() {
 
 func scheduleNextNotification() {
     guard sendNotifications else { return }
-    let randomTimeInteval = Double.random(in: 7...15)
-    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInteval, repeats: false) { timer in
+    let randomTimeInteval = Double.random(in: 10...15)
+    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInteval, repeats: true) { timer in
         sendRandomPaymentNotification()
         scheduleNextNotification()
     }
