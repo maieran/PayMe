@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UserNotifications
+import AVFoundation
 
 struct ContentView: View {
     var body: some View {
@@ -22,12 +23,39 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            
+            Button(action: stopSendingNotifications) {
+                Text("Stop Notifications")
+                    .padding()
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
+            }
         }
         .onAppear(perform: requestNotificationPermission)
         .onAppear(perform: startSendingNotifications)
-
     }
+}
 
+var notificationTimer: Timer?
+var sendNotifications = true // Kontrolliert die Benachrichtigungen
+
+func startSendingNotifications() {
+    scheduleNextNotification()
+}
+
+func scheduleNextNotification() {
+    guard sendNotifications else { return }
+    let randomTimeInteval = Double.random(in: 7...15)
+    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInteval, repeats: false) { timer in
+        sendRandomPaymentNotification()
+        scheduleNextNotification()
+    }
+}
+
+func stopSendingNotifications() {
+    notificationTimer?.invalidate()
+    print("Notifications stopped")
 }
 
 func requestNotificationPermission() {
@@ -40,38 +68,27 @@ func requestNotificationPermission() {
     }
 }
 
-func startSendingNotifications() {
-    scheduleNextNotification()
-}
-
-func scheduleNextNotification() {
-    let randomTimeInteval = Double.random(in: 10...45)
-    Timer.scheduledTimer(withTimeInterval: randomTimeInteval, repeats: false) { timer in
-        sendRandomPaymentNotification()
-        scheduleNextNotification()
-    }
-}
 
 func sendRandomPaymentNotification() {
     // Zahlungsbenachrichtigung
     let content = UNMutableNotificationContent()
 
     //Wählen eine Liste von Zahlungsquellen
-    let sources = ["AmaCorp.Shopify", "TarasCorp.Revo", "ShawgatCorp.Network", "BlueSky.SandComp"]
+    let sources = ["Shopify", "Revo", "Etsy", "Amazon", "BlueSky.SandComp"]
     let randomSources = sources.randomElement()!
     
     content.title = "Zahlung erhalten von \(randomSources)"
     
-    let amount = String(format: "%.2f", Double.random(in: 25...5000))
+    let amount = String(format: "%.2f", Double.random(in: 1...20))
 
     let currencies = ["$", "£", "€"]
     let randomCurrency = currencies.randomElement()!
     
-    content.body = "Sie haben eine Zahlung erhalten in Höhe von \(amount)\(randomCurrency)"
-    content.sound = UNNotificationSound.default
+    content.body = "Sie haben eine Zahlung in Höhe von \(amount)\(randomCurrency) erhalten."
     
-    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
-    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+    content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "payment_success.m4a"))
+    
+    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
     
     UNUserNotificationCenter.current().add(request) {
         error in

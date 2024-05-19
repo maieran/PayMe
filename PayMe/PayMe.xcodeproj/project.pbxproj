@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871AF4862BFA31850026C5EC /* payment_success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 871AF4852BFA31850026C5EC /* payment_success.m4a */; };
 		8750580B2BF9E8EE00F1A2AA /* PayMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */; };
 		8750580D2BF9E8EE00F1A2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750580C2BF9E8EE00F1A2AA /* ContentView.swift */; };
 		8750580F2BF9E8F000F1A2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8750580E2BF9E8F000F1A2AA /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		871AF4852BFA31850026C5EC /* payment_success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = payment_success.m4a; path = ../../../../../Downloads/payment_success.m4a; sourceTree = "<group>"; };
 		875058072BF9E8EE00F1A2AA /* PayMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMeApp.swift; sourceTree = "<group>"; };
 		8750580C2BF9E8EE00F1A2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */,
+				871AF4852BFA31850026C5EC /* payment_success.m4a */,
 				8750580C2BF9E8EE00F1A2AA /* ContentView.swift */,
 				8750580E2BF9E8F000F1A2AA /* Assets.xcassets */,
 				875058102BF9E8F000F1A2AA /* PayMe.entitlements */,
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871AF4862BFA31850026C5EC /* payment_success.m4a in Resources */,
 				875058132BF9E8F000F1A2AA /* Preview Assets.xcassets in Resources */,
 				8750580F2BF9E8F000F1A2AA /* Assets.xcassets in Resources */,
 			);
