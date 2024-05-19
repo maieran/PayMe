@@ -7,7 +7,6 @@
 
 import SwiftUI
 import UserNotifications
-import AVFoundation
 
 struct ContentView: View {
     var body: some View {
@@ -45,9 +44,8 @@ func startSendingNotifications() {
 }
 
 func scheduleNextNotification() {
-    guard sendNotifications else { return }
-    let randomTimeInteval = Double.random(in: 10...15)
-    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInteval, repeats: true) { timer in
+    let randomTimeInterval = Double.random(in: 4...5)
+    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInterval, repeats: true) { timer in
         sendRandomPaymentNotification()
         scheduleNextNotification()
     }
