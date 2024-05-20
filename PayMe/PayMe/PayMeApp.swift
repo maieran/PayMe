@@ -2,7 +2,7 @@
 //  PayMeApp.swift
 //  PayMe
 //
-//  Created by AMACOP on 19.05.24.
+//  Created by PEAQ on 20.05.24.
 //
 
 import SwiftUI

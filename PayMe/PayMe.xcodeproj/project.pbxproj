@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		871AF4862BFA31850026C5EC /* payment_success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 871AF4852BFA31850026C5EC /* payment_success.m4a */; };
-		8750580B2BF9E8EE00F1A2AA /* PayMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */; };
-		8750580D2BF9E8EE00F1A2AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8750580C2BF9E8EE00F1A2AA /* ContentView.swift */; };
-		8750580F2BF9E8F000F1A2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8750580E2BF9E8F000F1A2AA /* Assets.xcassets */; };
-		875058132BF9E8F000F1A2AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 875058122BF9E8F000F1A2AA /* Preview Assets.xcassets */; };
+		87657D432BFB722C001C42A9 /* PayMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87657D422BFB722C001C42A9 /* PayMeApp.swift */; };
+		87657D452BFB722C001C42A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87657D442BFB722C001C42A9 /* ContentView.swift */; };
+		87657D472BFB722E001C42A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87657D462BFB722E001C42A9 /* Assets.xcassets */; };
+		87657D4A2BFB722E001C42A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87657D492BFB722E001C42A9 /* Preview Assets.xcassets */; };
+		87657D512BFB72FB001C42A9 /* payment_success.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 87657D502BFB72FB001C42A9 /* payment_success.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		871AF4852BFA31850026C5EC /* payment_success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = payment_success.m4a; path = ../../../../../Downloads/payment_success.m4a; sourceTree = "<group>"; };
-		875058072BF9E8EE00F1A2AA /* PayMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMeApp.swift; sourceTree = "<group>"; };
-		8750580C2BF9E8EE00F1A2AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		8750580E2BF9E8F000F1A2AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		875058102BF9E8F000F1A2AA /* PayMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PayMe.entitlements; sourceTree = "<group>"; };
-		875058122BF9E8F000F1A2AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87657D3F2BFB722C001C42A9 /* PayMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87657D422BFB722C001C42A9 /* PayMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMeApp.swift; sourceTree = "<group>"; };
+		87657D442BFB722C001C42A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87657D462BFB722E001C42A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87657D492BFB722E001C42A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87657D502BFB72FB001C42A9 /* payment_success.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = payment_success.m4a; path = ../../../../../Downloads/payment_success.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		875058042BF9E8EE00F1A2AA /* Frameworks */ = {
+		87657D3C2BFB722C001C42A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,39 +34,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		875057FE2BF9E8EE00F1A2AA = {
+		87657D362BFB722C001C42A9 = {
 			isa = PBXGroup;
 			children = (
-				875058092BF9E8EE00F1A2AA /* PayMe */,
-				875058082BF9E8EE00F1A2AA /* Products */,
+				87657D412BFB722C001C42A9 /* PayMe */,
+				87657D402BFB722C001C42A9 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		875058082BF9E8EE00F1A2AA /* Products */ = {
+		87657D402BFB722C001C42A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				875058072BF9E8EE00F1A2AA /* PayMe.app */,
+				87657D3F2BFB722C001C42A9 /* PayMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		875058092BF9E8EE00F1A2AA /* PayMe */ = {
+		87657D412BFB722C001C42A9 /* PayMe */ = {
 			isa = PBXGroup;
 			children = (
-				8750580A2BF9E8EE00F1A2AA /* PayMeApp.swift */,
-				871AF4852BFA31850026C5EC /* payment_success.m4a */,
-				8750580C2BF9E8EE00F1A2AA /* ContentView.swift */,
-				8750580E2BF9E8F000F1A2AA /* Assets.xcassets */,
-				875058102BF9E8F000F1A2AA /* PayMe.entitlements */,
-				875058112BF9E8F000F1A2AA /* Preview Content */,
+				87657D422BFB722C001C42A9 /* PayMeApp.swift */,
+				87657D502BFB72FB001C42A9 /* payment_success.m4a */,
+				87657D442BFB722C001C42A9 /* ContentView.swift */,
+				87657D462BFB722E001C42A9 /* Assets.xcassets */,
+				87657D482BFB722E001C42A9 /* Preview Content */,
 			);
 			path = PayMe;
 			sourceTree = "<group>";
 		};
-		875058112BF9E8F000F1A2AA /* Preview Content */ = {
+		87657D482BFB722E001C42A9 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				875058122BF9E8F000F1A2AA /* Preview Assets.xcassets */,
+				87657D492BFB722E001C42A9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -75,13 +73,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		875058062BF9E8EE00F1A2AA /* PayMe */ = {
+		87657D3E2BFB722C001C42A9 /* PayMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 875058162BF9E8F000F1A2AA /* Build configuration list for PBXNativeTarget "PayMe" */;
+			buildConfigurationList = 87657D4D2BFB722E001C42A9 /* Build configuration list for PBXNativeTarget "PayMe" */;
 			buildPhases = (
-				875058032BF9E8EE00F1A2AA /* Sources */,
-				875058042BF9E8EE00F1A2AA /* Frameworks */,
-				875058052BF9E8EE00F1A2AA /* Resources */,
+				87657D3B2BFB722C001C42A9 /* Sources */,
+				87657D3C2BFB722C001C42A9 /* Frameworks */,
+				87657D3D2BFB722C001C42A9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -89,25 +87,25 @@
 			);
 			name = PayMe;
 			productName = PayMe;
-			productReference = 875058072BF9E8EE00F1A2AA /* PayMe.app */;
+			productReference = 87657D3F2BFB722C001C42A9 /* PayMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		875057FF2BF9E8EE00F1A2AA /* Project object */ = {
+		87657D372BFB722C001C42A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					875058062BF9E8EE00F1A2AA = {
+					87657D3E2BFB722C001C42A9 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 875058022BF9E8EE00F1A2AA /* Build configuration list for PBXProject "PayMe" */;
+			buildConfigurationList = 87657D3A2BFB722C001C42A9 /* Build configuration list for PBXProject "PayMe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,43 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = 875057FE2BF9E8EE00F1A2AA;
-			productRefGroup = 875058082BF9E8EE00F1A2AA /* Products */;
+			mainGroup = 87657D362BFB722C001C42A9;
+			productRefGroup = 87657D402BFB722C001C42A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				875058062BF9E8EE00F1A2AA /* PayMe */,
+				87657D3E2BFB722C001C42A9 /* PayMe */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		875058052BF9E8EE00F1A2AA /* Resources */ = {
+		87657D3D2BFB722C001C42A9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				871AF4862BFA31850026C5EC /* payment_success.m4a in Resources */,
-				875058132BF9E8F000F1A2AA /* Preview Assets.xcassets in Resources */,
-				8750580F2BF9E8F000F1A2AA /* Assets.xcassets in Resources */,
+				87657D512BFB72FB001C42A9 /* payment_success.m4a in Resources */,
+				87657D4A2BFB722E001C42A9 /* Preview Assets.xcassets in Resources */,
+				87657D472BFB722E001C42A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		875058032BF9E8EE00F1A2AA /* Sources */ = {
+		87657D3B2BFB722C001C42A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8750580D2BF9E8EE00F1A2AA /* ContentView.swift in Sources */,
-				8750580B2BF9E8EE00F1A2AA /* PayMeApp.swift in Sources */,
+				87657D452BFB722C001C42A9 /* ContentView.swift in Sources */,
+				87657D432BFB722C001C42A9 /* PayMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		875058142BF9E8F000F1A2AA /* Debug */ = {
+		87657D4B2BFB722E001C42A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -203,16 +201,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		875058152BF9E8F000F1A2AA /* Release */ = {
+		87657D4C2BFB722E001C42A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,80 +258,68 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		875058172BF9E8F000F1A2AA /* Debug */ = {
+		87657D4E2BFB722E001C42A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PayMe/PayMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PayMe/Preview Content\"";
 				DEVELOPMENT_TEAM = A4RJ43KH96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = amacop.PayMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		875058182BF9E8F000F1A2AA /* Release */ = {
+		87657D4F2BFB722E001C42A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PayMe/PayMe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PayMe/Preview Content\"";
+				DEVELOPMENT_TEAM = A4RJ43KH96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = amacop.PayMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		875058022BF9E8EE00F1A2AA /* Build configuration list for PBXProject "PayMe" */ = {
+		87657D3A2BFB722C001C42A9 /* Build configuration list for PBXProject "PayMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				875058142BF9E8F000F1A2AA /* Debug */,
-				875058152BF9E8F000F1A2AA /* Release */,
+				87657D4B2BFB722E001C42A9 /* Debug */,
+				87657D4C2BFB722E001C42A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		875058162BF9E8F000F1A2AA /* Build configuration list for PBXNativeTarget "PayMe" */ = {
+		87657D4D2BFB722E001C42A9 /* Build configuration list for PBXNativeTarget "PayMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				875058172BF9E8F000F1A2AA /* Debug */,
-				875058182BF9E8F000F1A2AA /* Release */,
+				87657D4E2BFB722E001C42A9 /* Debug */,
+				87657D4F2BFB722E001C42A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 875057FF2BF9E8EE00F1A2AA /* Project object */;
+	rootObject = 87657D372BFB722C001C42A9 /* Project object */;
 }

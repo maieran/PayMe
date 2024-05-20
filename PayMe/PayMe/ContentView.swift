@@ -15,7 +15,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding()
                 
-            Button(action: requestNotificationPermission) {
+            Button(action: enableNotifications) {
                 Text("Enable Notifications")
                     .padding()
                     .background(Color.purple)
@@ -32,53 +32,53 @@ struct ContentView: View {
             }
         }
         .onAppear(perform: requestNotificationPermission)
-        .onAppear(perform: startSendingNotifications)
     }
 }
 
 var notificationTimer: Timer?
-var sendNotifications = true // Kontrolliert die Benachrichtigungen
+
+func enableNotifications() {
+    startSendingNotifications()
+}
 
 func startSendingNotifications() {
     scheduleNextNotification()
 }
 
 func scheduleNextNotification() {
-    let randomTimeInterval = Double.random(in: 4...5)
-    notificationTimer = Timer.scheduledTimer(withTimeInterval: randomTimeInterval, repeats: true) { timer in
+    let timeInterval: TimeInterval = 5
+    notificationTimer = Timer.scheduledTimer(withTimeInterval: timeInterval, repeats: true) { timer in
         sendRandomPaymentNotification()
-        scheduleNextNotification()
     }
 }
 
 func stopSendingNotifications() {
     notificationTimer?.invalidate()
+    notificationTimer = nil
     print("Notifications stopped")
 }
 
 func requestNotificationPermission() {
-    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+    let center = UNUserNotificationCenter.current()
+    center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
         if granted {
             print("Permission granted!")
+            center.delegate = NotificationDelegate.shared
         } else {
             print("Permission denied")
         }
     }
 }
 
-
 func sendRandomPaymentNotification() {
-    // Zahlungsbenachrichtigung
     let content = UNMutableNotificationContent()
 
-    //Wählen eine Liste von Zahlungsquellen
     let sources = ["Shopify", "Revo", "Etsy", "Amazon", "BlueSky.SandComp"]
-    let randomSources = sources.randomElement()!
+    let randomSource = sources.randomElement()!
     
-    content.title = "Zahlung erhalten von \(randomSources)"
+    content.title = "Zahlung erhalten von \(randomSource)"
     
     let amount = String(format: "%.2f", Double.random(in: 1...20))
-
     let currencies = ["$", "£", "€"]
     let randomCurrency = currencies.randomElement()!
     
@@ -86,18 +86,29 @@ func sendRandomPaymentNotification() {
     
     content.sound = UNNotificationSound(named: UNNotificationSoundName(rawValue: "payment_success.m4a"))
     
-    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+    // trigger nac 10 Sekunden
+    let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
     
-    UNUserNotificationCenter.current().add(request) {
-        error in
+    let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+    
+    UNUserNotificationCenter.current().add(request) { error in
         if let error = error {
             print("Fehlernotifikation: \(error.localizedDescription)")
         }
     }
 }
 
+class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
+    static let shared = NotificationDelegate()
 
-struct ConntentView_Previews: PreviewProvider {
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.banner, .sound])
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
