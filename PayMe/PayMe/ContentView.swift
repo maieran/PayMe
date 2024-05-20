@@ -30,22 +30,36 @@ struct ContentView: View {
                 Text(transaction)
             }
             .frame(height: 200)
-                
-            Button(action: enableNotifications) {
-                Text("Enable Notifications")
+
+            Button(action: {}) {
+                Text("Refresh")
                     .padding()
-                    .background(Color.purple)
+                    .background(Color.gray)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            .padding(.top)
+
+            Spacer()
             
-            Button(action: stopSendingNotifications) {
-                Text("Stop Notifications")
-                    .padding()
-                    .background(Color.red)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+            HStack {
+                Button(action: enableNotifications) {
+                    Text("Enable Notifications")
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                
+                Button(action: stopSendingNotifications) {
+                    Text("Stop Notifications")
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
             }
+            .padding(.bottom)
         }
         .onAppear(perform: requestNotificationPermission)
     }
