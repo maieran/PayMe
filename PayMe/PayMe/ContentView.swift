@@ -112,16 +112,16 @@ struct ContentView: View {
         
         if let amountDouble = Double(amount) {
             DispatchQueue.main.async {
-                updateIncomeAndTransactions(amount: amountDouble, currency: randomCurrency)
+                updateIncomeAndTransactions(amount: amountDouble, currency: randomCurrency, source: randomSource)
             }
         } else {
             print("Failed to convert amount to Double")
         }
     }
 
-    func updateIncomeAndTransactions(amount: Double, currency: String) {
+    func updateIncomeAndTransactions(amount: Double, currency: String, source: String) {
         totalIncome += amount
-        let transaction = "\(String(format: "%.2f", amount))\(currency)"
+        let transaction = "\(String(format: "%.2f", amount))\(currency) - Bezahlung von \(source)"
         transactions.insert(transaction, at: 0)
         
         if transactions.count > 5 {
